@@ -8,9 +8,6 @@ function Navbar() {
           <div className="text-2xl font-bold uppercase">Loja de Games</div>
 
           <div className="flex gap-4">
-            <Link to="/login" className="hover:underline">
-              Login
-            </Link>
             <Link to="/home" className="hover:underline">
               Home
             </Link>
@@ -18,8 +15,9 @@ function Navbar() {
               Categorias
             </Link>
             <div className="hover:underline">Produtos</div>
-            <div className="hover:underline">Cadastrar categoria</div>
-            <div className="hover:underline">Perfil</div>
+            <Link to="/cadastroCategoria" className="hover:underline">
+              Cadastrar categoria
+            </Link>
             <div className="hover:underline">Sair</div>
           </div>
         </div>
